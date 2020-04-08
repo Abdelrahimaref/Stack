@@ -22,7 +22,6 @@
             top: 10rem;
         }
         &:hover {
-            outline: 1.5rem solid $blue-color-light;
             transform: scale(1.05) translateY(-0.5rem);
             box-shadow: 0 2.5rem 4rem rgba($black-color,0.5);
             z-index: 20;
@@ -34,7 +33,6 @@
             outline-offset: 2em ;
 
             &:hover {
-                outline: 1.5rem solid $blue-color-light;
                 transform: scale(1.05) translateY(-0.5rem);
                 box-shadow: 0 2.5rem 4rem rgba($black-color,0.5);
                 z-index: 20;

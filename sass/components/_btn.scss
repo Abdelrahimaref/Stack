@@ -92,3 +92,23 @@
         transform: translateY(0);
     }
 }
+
+
+/**** Go Up Button ****/
+
+#goUPButton {
+    display: none;
+    font-size: 35px;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 50%;
+    width: 52px;
+    height: 53px;
+    padding-bottom: 55px;
+    position: fixed;
+    right: 20px;
+    bottom: 19px;
+    cursor: pointer;
+    z-index: 999999;
+    text-align: center;
+}
