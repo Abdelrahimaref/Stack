@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(20deg, #5e72e4, #87CEEB, #C0C0C0);
+    background-image: linear-gradient(20deg, #5e72e4, #5603ad, #87CEEB);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
