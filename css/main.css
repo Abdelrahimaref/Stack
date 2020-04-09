@@ -262,7 +262,7 @@ a:hover {
   }
 
   .heading-primary--sub {
-    font-size: 3rem;
+    display: none;
   }
 }
 .btn {
