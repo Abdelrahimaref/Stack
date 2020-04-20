@@ -37,3 +37,16 @@ function success() {
         title: 'Request Send successfully'
       })
 }
+function success2() {
+    const Toast = Swal.mixin({
+        toast: false,
+        position: 'center',
+        showConfirmButton: false,
+        timer: 3500
+      })
+      
+      Toast.fire({
+        type: 'success',
+        title: 'Message Send successfully We will answer soon'
+      })
+}

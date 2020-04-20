@@ -19,7 +19,7 @@
     padding-left: 1rem;
 }
 a {
-    color:#777;
+    color:#FFF;
     text-decoration: none;
     &:hover {
         text-decoration: none;
@@ -63,4 +63,19 @@ a {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
     overflow-y: scroll;
 
+}
+.padding-top-3 {
+    padding-top: 2rem;
+}
+.section-title {
+    margin: 0 0 1.5rem 0;
+    font-size: 14px;
+}
+p {
+
+    font-size: 14px;
+}
+.icon {
+    font-size: 20px;
+    cursor: pointer;
 }

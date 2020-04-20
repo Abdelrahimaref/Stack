@@ -1,14 +1,9 @@
 .header {
-    background-color: $white-color;
-    color: $black-color-light;
-    transition: all 0.45s ease 0s;
-    box-shadow: 2px 2px 20px 0px rgba(44, 101, 144, 0.1);
-    padding: 2rem;
+    border-radius: 0;
+    background: #009efb;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 3rem;
     &__nav {
-        
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
         &--brand {
             padding-top: 1rem;
             h2 {
@@ -19,10 +14,20 @@
             display: flex;
             justify-content: center;
 
+
             & > div {
                 margin-right: 2.5rem;
-                padding-top: 1.5rem;
-                font-size: 1.5rem;
+                padding: 1.5rem 1rem;
+                font-size: 1.7rem;
+                color: $white-color;
+
+            }
+            .dropdown a {
+                color: $white-color;
+                i {
+                    font-size: 2rem;
+                    padding-top: 1rem;
+                }
             }
         }
     }

@@ -128,22 +128,17 @@
 
           <!---- Style Section In profile.scss-->
           <div class="content-bottom d-flex justify-content-between text-center">
+              <div></div>
               <div>
-                <button type="submit" class="btn btn-primary my-4 padding-btn"> Operation Instructions</button>
-                <button type="submit" class="btn btn-primary my-4 padding-btn" data-toggle="modal" data-target="#exampleModal"> Complain</button>
-
+                <input type="File" class="btn btn-primary my-4 padding-btn"> Upload Operation Instructions</button>
               </div>
               
-              <div class="content-bottom__right">
-                  <a href="chat-room.html" class="btn btn-success my-4 padding-btn">Chat</a>
-              </div>
           </div>
 
           <div class="profile-nav row">
-              <div class="col-md-3 text-center profile-nav__active send-req-btn">Send Request</div>
-              <div class="col-md-3 text-center all-req-btn">All Incoming Requests</div>
-              <div class="col-md-3 text-center track-pay-btn">Track Payment</div>
-              <div class="col-md-3 text-center check-eligibility-btn">Check Eligibility</div>
+              <div class="col-md-4 text-center profile-nav__active send-req-btn"> About Me </div>
+              <div class="col-md-4 text-center all-req-btn">Contact Stacknet</div>
+              <div class="col-md-4 text-center track-pay-btn">Change Password</div>
           </div>
 
         </div>
@@ -153,25 +148,27 @@
       <!------------------ Send Request Section  ------------------->
     <div class="container send-Req">
       <section class="send-request">
-        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ٌSend-Requests">
-                <div class="text-center">
-                  <img src="img/icon_login.svg" alt="" style="height: 8rem;">
-                  <h3 class="text-center text-muted h4content">ٍSend Request To <span>Egycare</span></h3>
-                    <div class="form-group">
-                      <select class="form-control " id="Select1">
-                        <option value="">Choose Request...</option>
-                        <option>Update Price List</option>
-                        <option>Claim Form</option>
-                        <option>Deployment</option>
-                      </select>
-                      <div class=" text-center">
-                          <a href="#" class="btn btn-primary my-4 padding-btn" onclick="success()"> Send</a>
-                      </div>
-                    </div>
-                  </div>
+        <div class="col-lg-12" data-wow-duration="2s" data-wow-delay="0s">
+            <div class="d-flex justify-content-between">
+                <h2 class="section-title">
+                    About Me
+                </h2>
+                <div class="icon-div">
+                    <a data-toggle="modal" data-target="#exampleModal"><i class="far fa-edit icon"></i></a>
+                </div>
             </div>
-        </div> 
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non elit nisl. 
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                Aenean luctus, justo id pellentesque imperdiet, augue metus ornare quam, in pulvinar massa erat nec dui. Nam at facilisis nulla.
+            </p>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary my-4 padding-btn"> Show My Operation Instructions</button>
+            </div>
+
+        </div>
+
       </section>
     </div>
 
@@ -183,43 +180,18 @@
           <h3 class="text-center">Track Your Payments</h3>
           <form class="form" role="form" autocomplete="off"action="">  
             <div class="form-group">
-                <select class="form-control " id="Select1">
-                  <option value="">Choose Year...</option>
-                  <option>2020</option>
-                </select>
+                <input type="password" name="" id="" class="form-control" placeholder="Current Password" >
             </div>
             <div class="form-group">
-              <select class="form-control " id="Select1">
-                <option value="">Choose Month...</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
-
-              </select>
-          </div>
+                <input type="password" name="" id="" class="form-control"placeholder="new password" >
+            </div>
+            <div class="form-group">
+                <input type="password" name="" id="" class="form-control"placeholder="Confirm Password" >
+            </div>
             <div class=" text-center">
-                <button type="submit" class="btn btn-primary my-4 padding-btn"> Show</button>
+                <button type="submit" class="btn btn-primary my-4 padding-btn"> Change</button>
             </div>
           </form>
-          <div class="track-payment">
-            <h3 style="margin-bottom: 50px;" class="text-center">In <span>Jan 2020 </span><br>Your are in <span>collection</span> Step</h3>
-            <ul class="progressBar">
-                <li class="active">Collection</li>
-                <li>STACKNET Review</li>
-                <li>Sent</li>
-                <li>Due Date</li>
-                <li>Transfere</li>
-            </ul>
-          </div>
         </div>
       </section>
     </div>
@@ -256,68 +228,31 @@
     <div class="container incoming-req">
       <section class="send-request" style="padding-top: 10rem;">
         <div class="col-md-10 offset-md-1 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
-          <table class="table table-striped text-center">
-            <tr class="table-primary" style="color: #000;">
-                <th>#</th>
-                <th>Type</th>
-                <th>Date</th>
-                <th>details</th>
-            </tr>
-            <tr>
-                <th scope="row">1</th>
-                <td>Case-Investigation	</td>
-                <td>1/2/2020</td>
-                <td>
-                  <a href="#" class="btn btn-primary">Show</a>
-                </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Case-Investigation	</td>
-              <td>1/2/2020</td>
-              <td>
-                <a href="#" class="btn btn-primary">Show</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Case-Investigation	</td>
-              <td>1/2/2020</td>
-              <td>
-                <a href="#" class="btn btn-primary">Show</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Case-Investigation	</td>
-              <td>1/2/2020</td>
-              <td>
-                <a href="#" class="btn btn-primary">Show</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Case-Investigation	</td>
-              <td>1/2/2020</td>
-              <td>
-                <a href="#" class="btn btn-primary">Show</a>
-              </td>
-            </tr> 
 
-        </table>
+            <h3 class="text-center">Contact Stacknet</h3>
+            <form class="form" role="form" autocomplete="off"action=""> 
+                <input type="email"placeholder="write You Email"class="form-control" style="margin-bottom: 1rem;"> 
+                <div class="form-group">
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Write Your Message"></textarea>
+                </div>
+            </form>  
+            <div class=" text-center">
+                <button class="btn btn-primary my-4 padding-btn" onclick="success2()"> Send</button>
+            </div>    
         </div>
       </section>
     </div>
 
 
 
-  <!-------------------------- Make Complains Modal ------------------->
+       
+  <!-------------------------- Edit About-Paragraph Modal ------------------->
     
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Make Complain</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Edit Paragraph</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -327,11 +262,11 @@
             <div class="container">
               <form class="form" role="form" autocomplete="off"action=""> 
                   <div class="form-group">
-                      <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Write Your Complain"></textarea>
+                      <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Write Your Resume"></textarea>
                   </div>
               </form>  
               <div class=" text-center">
-                  <button class="btn btn-primary my-4 padding-btn" onclick="success2()" data-dismiss="modal"> Send</button>
+                  <button class="btn btn-primary my-4 padding-btn" onclick="success2()" data-dismiss="modal"> Done</button>
               </div> 
             </div>
         </div>
@@ -343,8 +278,6 @@
     </div>
   </div>
 
-
-        
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>

@@ -1,5 +1,11 @@
 .btn {
 
+    &-primary {
+        color: #fff;
+        background-color: #009efb; 
+        border-color: #009efb;
+    }
+
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -8,7 +14,7 @@
         display: inline-block;
         transition: all .2s;
         position: relative;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         border: 0;
     }
     &:hover {
