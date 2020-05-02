@@ -167,171 +167,275 @@
         <div class="container">
             <!---- Style Section In main-page.scss ---->
           <section class="main-page-content d-flex justify-content-center" style="position: relative;">
-              <div class="logo_raduis-image">
-                  <img src="img/EGYCARE_128.png" alt="" class="logo_raduis-image--photo">
-              </div>
+
           </section>
 
 
           <!---- Style Section In profile.scss-->
-          <div class="content-bottom d-flex justify-content-between text-center">
-              <div>
-                <button type="submit" class="btn btn-primary my-4 padding-btn"> Operation Instructions</button>
-                <button type="submit" class="btn btn-primary my-4 padding-btn" data-toggle="modal" data-target="#exampleModal"> Complain</button>
-
-              </div>
-              
-              <div class="content-bottom__right">
-                  <a href="chat-room.html" class="btn btn-success my-4 padding-btn">Chat</a>
-              </div>
-          </div>
 
           <div class="profile-nav row">
-              <div class="col-md-3 text-center profile-nav__active send-req-btn">Send Request</div>
-              <div class="col-md-3 text-center all-req-btn">
-                All  Requests
-                <a href="Request_from_you.html" style="background-color: #f00; font-size: 1rem;" class="alert" role="alert">
-                  7 new
-                </a>
-              </div>
-              <div class="col-md-3 text-center track-pay-btn">Track Payment</div>
-              <div class="col-md-3 text-center check-eligibility-btn">Check Eligibility</div>
+              <div class="col-md-3 text-center profile-nav__active send-req-btn">All Pinding Requests</div>
+              <div class="col-md-3 text-center all-req-btn">All Accepted Requests</div>
+              <div class="col-md-3 text-center track-pay-btn">All Refused Requests</div>
+              <div class="col-md-3 text-center contract-btn">All Contract Requests</div>
           </div>
 
         </div>
 
     </main>
 
-      <!------------------ Send Request Section  ------------------->
+      <!------------------ Pending Request Section  ------------------->
     <div class="container send-Req">
-      <section class="send-request">
-        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ٌSend-Requests">
-                <div class="text-center">
-                  <img src="img/icon_login.svg" alt="" style="height: 8rem;">
-                  <h3 class="text-center text-muted h4content">ٍSend Request To <span>Egycare</span></h3>
-                  <div class="form-group">
-                    <select class="form-control " id="Select1">
-                      <option value="">Choose Request...</option>
-                      <option>Update Price List</option>
-                      <option>Claim Form</option>
-                      <option>Deployment</option>
-                    </select>
-                    <div class=" text-center">
-                        <a href="#" class="btn btn-primary my-4 padding-btn" onclick="success()"> Send</a>
-                    </div>
-                  </div>
-                </div>
+        <section class="send-request">
+            <h3 class="text-center" style="margin-bottom:3rem">All Pending Requests</h3>
+            <div class="col-md-10 offset-md-1 wow fadeInUp card-cover">
+                <table class="table table-striped text-center">
+                    <tr class="table-primary" style="color: #000;">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                           Still Pinding
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Globmid</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Still Pinding
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Axa</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Still Pinding
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Still Pinding
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Still Pinding
+                        </td>
+                    </tr> 
+    
+                </table>
             </div>
-        </div> 
-      </section>
+        </section>
     </div>
 
 
-      <!--------- Track Payment -------->
+      <!--------- Refused Request Section -------->
     <div class="container track-pay">
-      <section class="send-request">
-        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
-          <h3 class="text-center">Track Your Payments</h3>
-          <form class="form" role="form" autocomplete="off"action="">  
-            <div class="form-group">
-                <select class="form-control " id="Select1">
-                  <option value="">Choose Year...</option>
-                  <option>2020</option>
-                </select>
+        <section class="send-request">
+            <h3 class="text-center" style="margin-bottom:3rem">All Refused Requests</h3>
+            <div class="col-md-10 offset-md-1 wow fadeInUp card-cover">
+                <table class="table table-striped text-center">
+                    <tr class="table-primary" style="color: #000;">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Refused
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Globmid</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Refused
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Axa</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Refused
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Refused
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                          Refused                 
+                        </td>
+                    </tr> 
+    
+                </table>
             </div>
-            <div class="form-group">
-              <select class="form-control " id="Select1">
-                <option value="">Choose Month...</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
-
-              </select>
-          </div>
-            <div class=" text-center">
-                <button type="submit" class="btn btn-primary my-4 padding-btn"> Show</button>
-            </div>
-          </form>
-          <div class="track-payment">
-            <h3 style="margin-bottom: 50px;" class="text-center">In <span>Jan 2020 </span><br>Your are in <span>collection</span> Step</h3>
-            <ul class="progressBar">
-                <li class="active">Collection</li>
-                <li>STACKNET Review</li>
-                <li>Sent</li>
-                <li>Due Date</li>
-                <li>Transfere</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
     </div>
 
 
-      <!--------- Check Eligibility -------->
+      <!--------- Contract Requests Section -------->
 
-    <!-- <div class="container">
-      <section class="send-request">
-        <div class="check-eligibility">
-          <div class="row">
-              <div class="col-1">
-                  <h5 style="margin-top: 7px;">AXA : </h5>
-              </div>
-              <div class="col-3">
-                  <input type="text" value=""class="form-control"name="axaPart1">
-              </div>
-              <div class="col-3">
-                  <input type="text" value=""class="form-control"name="axaPart2">
-              </div>
-              <div class="col-3">
-                  <input type="text" value=""class="form-control"name="axaPart3">
-              </div>
-              <div class="col-2">
-                  <input type="submit" value="Check"class="form-control btn btn-info"name="axaCheck" style="margin-top: 5px;">
-              </div>
-          </div>
-        </div>
-      </section>
-    </div> -->
-
-
-    <!--------- Incoming Request Section-------->
-    <div class="container incoming-req">
-      <section class="send-request">
-        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
-            <div class="ٌSend-Requests">
-                <div class="text-center">
-                  <img src="img/icon_login.svg" alt="" style="height: 8rem;">
-                  <h3 class="text-center text-muted h4content">ٍ<span>Egycare</span></h3>
-                    <div class=" text-center">
-                      <div class="profile-nav row">
-                        <div class="col-md-6 offset-md-3 text-center" style="background-color: #50b5ff; margin-bottom: 2rem;">
-                          <a href="Request_from_specific_company.html">
-                            Requests From <span>EgyCare</span> <span style="background-color: #f00; font-size: 1rem;" class="alert" role="alert"> 7 new</span>
-                          </a>
-                         
-                        </div>
-                        <div class="col-md-6 offset-md-3 text-center" style="background-color: #50b5ff;">
-                          <a href="Request_to_specific_comany.html">
-                            Requests To <span>EgyCare</span> <span style="background-color: #f00; font-size: 1rem;" class="alert" role="alert"> 7 new</span>
-                          </a>
-                         
-                        </div>
-                      </div>
-                    </div>
-                </div>
+    <div class="container contract-requests ">
+        <section class="send-request">
+            <h3 class="text-center" style="margin-bottom:3rem">All Contracting Requests</h3>
+            <div class="col-md-10 offset-md-1 wow fadeInUp card-cover">
+                <table class="table table-striped text-center">
+                    <tr class="table-primary" style="color: #000;">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Alico</td>
+                        <td>1/2/2020</td>
+                        <td>
+                           Refused
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Globmid</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Refused
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Axa</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Refused
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Alico</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Accepted                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Alico</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Accepted
+                        </td>
+                    </tr> 
+    
+                </table>
             </div>
-        </div> 
-      </section>
+        </section>
+    </div>
+
+
+    <!--------- Accepted Request Section-------->
+    <div class="container incoming-req">
+        <section class="send-request">
+            <h3 class="text-center" style="margin-bottom:3rem">All Accepted Requests</h3>
+            <div class="col-md-10 offset-md-1 wow fadeInUp card-cover" data-wow-duration="2s" data-wow-delay="0s">
+                <table class="table table-striped text-center">
+                    <tr class="table-primary" style="color: #000;">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Accepted                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Globmid</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Accepted
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Axa</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Accepted                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Accepted                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Alico</td>
+                        <td>Case-Investigation	</td>
+                        <td>1/2/2020</td>
+                        <td>
+                            Accepted                        
+                        </td>
+                    </tr> 
+    
+                </table>
+            </div>
+        </section>
     </div>
 
 
@@ -362,7 +466,7 @@
         </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

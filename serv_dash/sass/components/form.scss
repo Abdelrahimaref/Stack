@@ -29,6 +29,9 @@ textarea {
 .h4content {
     margin-top: 2.5rem;
 }
+#hide {
+    display: none;
+}
 @media(max-width:700px) {
     .content-cover__heading {
         font-size: 3.5rem !important;
