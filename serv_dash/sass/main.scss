@@ -1,30 +1,41 @@
 
 @import"abstracts/functions";
 @import"abstracts/mixins";
-@import"abstracts/variables.scss";
+@import"abstracts/variables";
+@import"abstracts/colors";
 
 @import"base/base";
 @import"base/animations";
 @import"base/utilities";
 @import"base/typography";
 
-@import"pages/home";
-@import"pages/profile";
-
-@import"layout/header";
+@import"layout/card";
 @import"layout/responsive";
-@import"layout/dropdown.scss";
-@import"layout/main-page.scss";
+@import"layout/dropdown";
+@import"layout/notification-num";
 
-@import"components/btn";
-@import"components/composition";
-@import"components/list.scss";
-@import"components/card.scss";
-@import"components/raduis-image-profile";
-@import"components/form.scss";
+
+
+@import"components/header";
+@import"components/fixedMenu";
+@import"components/profile-card";
+@import"components/carousel";
+@import"components/search-input";
+@import"components/course-content";
+@import"components/profile";
+@import"components/form";
+@import"components/chat-room";
+@import"components/checkBox";
+@import"components/project";
+@import"components/profile";
+@import"components/main-page.scss";
 @import"components/track-payment";
-@import"components/review-box";
-@import"components/companies"
+@import"components/raduis-image-profile.scss";
+
+
+
+
+
 
 
 
