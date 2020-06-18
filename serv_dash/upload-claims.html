@@ -1,0 +1,295 @@
+<html>
+   <head>
+	   <!--TO Support Many Language Include Arabic Language-->
+        <meta charset="utf-8"/>
+	   
+	   <!--For Internet Explorer-->
+	    <meta http-equiv="X-UA-	Compatible"content="IE=edge">
+	   
+	   <!--First mobilw meta-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   
+        <meta name="description"content="mt company">
+        <title>4SOFT</title>
+        <link rel="shortcut icon" href="img/final logo-06.png">
+        <!--call bootstrap-->
+	    <link rel="stylesheet"href="css/bootstrap.css"/>
+        <!--Page Style-->	   
+        <link rel="stylesheet"href="css/main.css"/>
+       <!--Animate.css-->
+       <link rel="stylesheet"href="css/animate.min.css"/>
+       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>        
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">       
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	   <!--Internet Explorer-->
+	    <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+       <!---->
+       
+       <style>
+           @media(max-width: 992px) {
+                li {
+                    font-size: 10px;
+                }
+            }
+            input {
+                border: 1px solid #8e9198 !important;
+            }
+            fieldset.scheduler-border {
+                border: 1.5px groove #ddd !important;
+                padding: 0 1.4em 1.4em 1.4em !important;
+                margin: 5rem 0 1.5em 0 !important;
+                -webkit-box-shadow:  0px 0px 0px 0px #000;
+                        box-shadow:  0px 0px 0px 0px #000;
+            }
+            legend.scheduler-border {
+                width:inherit; /* Or auto */
+                padding:0 10px; /* To give a bit of padding on the left and right */
+                border-bottom:none;
+            }
+       </style>
+    </head>
+    
+ <!----------- Start NavBar Section ----------->
+    <nav class="bg-purple pb-0 fixed-top">
+        <div class="container-fluid">
+            <div class="our-nav d-flex" style="flex-wrap: wrap;justify-content: space-between;">
+
+                <div class="left-nav">
+                    <ul class="d-flex justify-content-end unstyled-list pt-4 pr-5">
+                        <li class="pt-1 mr-3 slide-in">
+                            <span class="icon-bullet">
+                                <i class="fas fa-sliders-h text-white fa-lg"></i>
+                            </span>
+                        </li>
+                        <li class="pt-1 mr-3 slide-out hidden">
+                            <span class="icon-bullet">
+                                <i class="fas fa-sliders-h text-white fa-lg"></i>
+                            </span>
+                        </li>
+                        <li class="">
+                            <a href="index.html">
+                                <h2 class="text-white">STACKNET</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-nav">
+                    
+                    <ul class="d-flex justify-content-end unstyled-list">
+
+                        <li class="pt-4 pr-3 ">
+                            <a class="badge y" href="chat.html" class="icon-bullet">
+                                <i  style="font-size: 18px;" class="fas fa-comments text-white fa-lg"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="pt-4 pr-5 dropdown">
+                            <a class="badge x" style="cursor: pointer;">
+                                <i  style="font-size: 18px;" class="fas fa-bell text-white fa-lg"></i>
+                            </a>
+                            <!---- Style in dropdown.scss(for dropdown styles) and notifiaction-num.scss(for number appear top of icon) ----->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="d-flex justify-content-between" style="">
+                                        <img src="img/icons/Artboard 7_users.svg"  alt="" style=" width: 20px;
+                                                                                                    height: 20px;
+                                                                                                    border-radius: 50%;
+                                                                                                    border: 1px solid #777;">
+                                        <div>
+                                            <span class="pl-3">Js Course</span>
+                                            <div style="font-size: 10px;">Java Script Courses Will Start In 5 minute</div>
+                                            <div class="d-flex justify-content-end">
+                                                <span class="" style="font-size: 8px;">2 min ago</span> 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between" style="">
+                                        <img src="img/icons/Artboard 7_users.svg"  alt="" style=" width: 20px;
+                                                                                                    height: 20px;
+                                                                                                    border-radius: 50%;
+                                                                                                    border: 1px solid #777;">
+                                        <div>
+                                            <span class="pl-3">Js Course</span>
+                                            <div style="font-size: 10px;">Java Script Courses Will Start In 5 minute</div>
+                                            <div class="d-flex justify-content-end">
+                                                <span class="" style="font-size: 8px;">2 min ago</span> 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>                                
+                                <li>
+                                    <div class="d-flex justify-content-between" style="">
+                                        <img src="img/icons/Artboard 7_users.svg"  alt="" style=" width: 20px;
+                                                                                                    height: 20px;
+                                                                                                    border-radius: 50%;
+                                                                                                    border: 1px solid #777;">
+                                        <div>
+                                            <span class="pl-3">Js Course</span>
+                                            <div style="font-size: 10px;">Java Script Courses Will Start In 5 minute</div>
+                                            <div class="d-flex justify-content-end">
+                                                <span class="" style="font-size: 8px;">2 min ago</span> 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>                                
+                                <li>
+                                    <div class="d-flex justify-content-between" style="">
+                                        <img src="img/icons/Artboard 7_users.svg"  alt="" style=" width: 20px;
+                                                                                                    height: 20px;
+                                                                                                    border-radius: 50%;
+                                                                                                    border: 1px solid #777;">
+                                        <div>
+                                            <span class="pl-3">Js Course</span>
+                                            <div style="font-size: 10px;">Java Script Courses Will Start In 5 minute</div>
+                                            <div class="d-flex justify-content-end">
+                                                <span class="" style="font-size: 8px;">2 min ago</span> 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>                            
+                            </ul>
+                        </li>
+                        <li class="pt-2 pr-5 dropdown2">
+                            <a style="cursor: pointer;">
+                                <img src="img/cmt2.jpg" alt="User" class="navbar-nav__img rounded-circle" >
+                                <span class="cursor-pointer text-white pl-3 lead ">Elrehab Hospital</span>
+                            </a>
+
+                            <!---- Style in dropdown.scss(for dropdown styles) and notifiaction-num.scss(for number appear top of icon) ----->
+                            <ul class="dropdown-menu2 unstyled-list" style="display: none;">
+                                <li style="width: 11rem; cursor: pointer;">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Log Out</p>
+                                        <span><i class="fas fa-sign-out-alt"></i></span>
+                                    </div>
+                                </li>                                                        
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------End Navbar Section ------->
+
+    <!-------- Start Body Section ------->
+    <main class="mt-5 d-flex justify-content-between">
+    <!------------ Left Srction ------------->
+        <!----------- Fixed Column Nav ---------->
+        <div class="left" style="width: 15%;" >
+            <!-- Sidebar (Fixed Column Navbar)-->
+            <div class="bg-white shadow mt-1"style="width:100% ; height:2200px" >
+                <ul class="pt-5 unstyled-list" style="position:fixed" >
+                    <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Home </a> </li>
+                    <li class="pt-5"><a href="chat.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Chat</a> <span class="badge badge-primary">3</span></li>
+                    <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Edit Profile</a></li>
+                    <li class="pt-5"><a href="req-from.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>Sent Requests<span class="badge bg-danger text-white">2 new</span>  </a></li>
+                    <li class="pt-5"><a href="req-to.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>Recieved Requests <span class="badge bg-danger text-white">2 new</span>  </a></li>
+                    <li class="pt-5"><a href="contract.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i> Contract Requests <span class="badge bg-danger text-white">2 new</span>  </a></li>
+                    <li class="pt-5"><a href="../index.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i> Log Out</a></li>
+                    <li class="pt-5"><a href="my-profile.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i> My Profile</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="right pt-0 pb-5 bg d-flex justify-content-center" style="width: 84%;">
+            <div class="card form-card" style="width: 60%;">
+                <div class="form-group">
+                    <div class="form-group ">
+                        <fieldset class="scheduler-border ">
+                            <legend class="scheduler-border">Patient Number <span>1</span></legend>
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="nameID" class="text-secondary">Patient <span>1</span> Name</label>
+                                <input type="text" name="name" id="nameID" class="c-form__control text-secondary" maxlength="60">
+                            </div>
+                            <div class="col-lg-12 form-group mt-5">
+                                <div class="gallery-service">
+                                    <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn" onclick="my()">Upload ID</button>
+                                    <input type="file" name="" id="file-btn" onchange="xyx()" hidden="hidden">
+                                    <span id="customTxt2"></span>
+                                </div>
+                            </div> 
+                            <div class="col-lg-12 form-group mt-5">
+                                <label for="Idnum" class="text-secondary">ID Number</label>
+                                <input type="text" name="Idnum" id="Idnum" class="c-form__control text-secondary" maxlength="60">
+                            </div>
+
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">Service Number <span>1</span></legend>
+
+                                <div class="col-lg-12 form-group mt-5">
+                                    <label for="Service-Date" class="text-secondary">Service 1 date</label>
+                                    <input type="password" name="Service-Date" id="Service-Date" class="c-form__control text-secondary" maxlength="60">
+                                </div> 
+                                <div class="col-lg-12 form-group mt-5">
+                                    <label for="SelectService" class="text-secondary">Service 1 Type</label>
+                                    <select name="" id="SelectService" class="c-form__control text-secondary">
+                                        <option value="1">Select Service Type</option>
+                                        <option value="Emergency">Emergency</option>
+                                        <option value="Out_Patient">Out Patient</option>
+                                        <option value="In_Patient">In Patient</option>
+                                    </select>
+                                </div> 
+                                <div class="col-lg-12 form-group mt-5">
+                                    <label for="con-newpassID" class="text-secondary">Service 1 description</label>
+                                    <input type="password" name="con-newpass" id="con-newpassID" class="c-form__control text-secondary" maxlength="60">
+                                </div> 
+                                <div class="col-lg-12 form-group mt-5">
+                                    <div class="gallery-service">
+                                        <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn" onclick="my()">Upload Service <span>1</span> Attachment</button>
+                                        <input type="file" name="" id="file-btn" onchange="xyx()" hidden="hidden">
+                                        <span id="customTxt2"></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <p class="text-primary ml-5 add-another x-claim" style="cursor: pointer;">Add another service</p> 
+
+                        </fieldset>
+                    </div> 
+                    <div class="form-group d-flex justify-content-center add-pat">
+                        <button class="btn btn-primary btn-lg mt-4 pl-5 pr-5 pt-3 pb-3" onclick="addPatientSuccessfully()">Done</button>
+                    </div>
+                    <!-- <p class="text-primary ml-5 add-a" style="cursor: pointer;"></p>  -->
+                                     
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+		<script src="../js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
+        <script src="js/jQuery3.3.1.min.js"></script>
+        <!---Slider Laibiray-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/sliderComponents.js"></script>
+        <script src="js/e.js"></script>
+	</body>
+    
+
+
+</html>

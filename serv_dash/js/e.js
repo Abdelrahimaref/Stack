@@ -1,6 +1,109 @@
+/******** Add Another Services ********/
+var counterClaim = 2 ;  
+$('.add-another').click(function(){
+  $(this).before(`
+                <fieldset class="scheduler-border">
+                    <legend class="scheduler-border">Service Number <span>${counterClaim}</span></legend>
+
+                    <div class="col-lg-12 form-group mt-5">
+                        <label for="Service-Date" class="text-secondary">Service <span>${counterClaim}</span> date</label>
+                        <input type="password" name="Service-Date" id="Service-Date" class="c-form__control text-secondary" maxlength="60">
+                    </div> 
+                    <div class="col-lg-12 form-group mt-5">
+                        <label for="SelectService" class="text-secondary">Service <span>${counterClaim}</span> Type</label>
+                        <select name="" id="SelectService" class="c-form__control text-secondary">
+                            <option value="1">Select Service Type</option>
+                            <option value="Emergency">Emergency</option>
+                            <option value="Out_Patient">Out Patient</option>
+                            <option value="In_Patient">In Patient</option>
+                        </select>
+                    </div> 
+                    <div class="col-lg-12 form-group mt-5">
+                        <label for="con-newpassID" class="text-secondary">Service <span>${counterClaim}</span> description</label>
+                        <input type="password" name="con-newpass" id="con-newpassID" class="c-form__control text-secondary" maxlength="60">
+                    </div> 
+                    <div class="col-lg-12 form-group mt-5">
+                        <div class="gallery-service">
+                            <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn" onclick="my()">Upload Service <span>1</span> Attachment</button>
+                            <input type="file" name="" id="file-btn" onchange="xyx()" hidden="hidden">
+                            <span id="customTxt2"></span>
+                        </div>
+                    </div>
+              </fieldset>
+  `)
+  counterClaim++ ; 
+});
+var countPatient = 2 ; 
+var counterClaim2 = 2 ; 
+$('.add-a').click(function(){
+  $('.add-pat').before(`
+        <fieldset class="scheduler-border ">
+        <legend class="scheduler-border">Patient Number <span>${countPatient}</span></legend>
+        <div class="col-lg-12 form-group mt-5">
+            <label for="nameID" class="text-secondary">Patient <span>${countPatient}</span> Name</label>
+            <input type="text" name="name" id="nameID" class="c-form__control text-secondary" maxlength="60">
+        </div>
+        <div class="col-lg-12 form-group mt-5">
+            <div class="gallery-service">
+                <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn" onclick="my()">Upload ID</button>
+                <input type="file" name="" id="file-btn" onchange="xyx()" hidden="hidden">
+                <span id="customTxt2"></span>
+            </div>
+        </div> 
+        <div class="col-lg-12 form-group mt-5">
+            <label for="Idnum" class="text-secondary">ID Number</label>
+            <input type="text" name="Idnum" id="Idnum" class="c-form__control text-secondary" maxlength="60">
+        </div>
+
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Service Number <span>${countPatient}</span></legend>
+
+            <div class="col-lg-12 form-group mt-5">
+                <label for="Service-Date" class="text-secondary">Service <span>${countPatient}</span> Date</label>
+                <input type="password" name="Service-Date" id="Service-Date" class="c-form__control text-secondary" maxlength="60">
+            </div> 
+            <div class="col-lg-12 form-group mt-5">
+                <label for="SelectService" class="text-secondary">Service <span>${countPatient}</span> Type</label>
+                <select name="" id="SelectService" class="c-form__control text-secondary">
+                    <option value="1">Select Service Type</option>
+                    <option value="Emergency">Emergency</option>
+                    <option value="Out_Patient">Out Patient</option>
+                    <option value="In_Patient">In Patient</option>
+                </select>
+            </div> 
+            <div class="col-lg-12 form-group mt-5">
+                <label for="con-newpassID" class="text-secondary">Service <span>${countPatient}</span> description</label>
+                <input type="password" name="con-newpass" id="con-newpassID" class="c-form__control text-secondary" maxlength="60">
+            </div> 
+            <div class="col-lg-12 form-group mt-5">
+                <div class="gallery-service">
+                    <button class="btn btn-success mb-4 bg-transparent btn-photo" id="src-btn" onclick="my()">Upload Service <span>${countPatient}</span> Attachment</button>
+                    <input type="file" name="" id="file-btn" onchange="xyx()" hidden="hidden">
+                    <span id="customTxt2"></span>
+                </div>
+            </div>
+        </fieldset>
+        <p class="text-primary ml-5 add-another" style="cursor: pointer;">Add another service</p> 
+      </fieldset>
+  `)
+  countPatient++ ; 
+})
+
+var srcBtn = document.getElementById('src-btn');
+var fileBtn = document.getElementById('file-btn');
+var customTxt2 = document.getElementById('customTxt2');
 
 
-/**** Slide-in-out in navbar ****/
+function my() {
+  fileBtn.click();
+};
+function xyx() {
+  if(fileBtn.value) {
+    customTxt2.innerHTML = fileBtn.value;
+  } else {
+    customTxt2.innerHTML = "No File Chosen yet !";
+  }
+}/**** Slide-in-out in navbar ****/
 
 $('.slide-in').click(function(){
     $('.left').hide(300);  
@@ -210,6 +313,33 @@ function success() {
       })
 }
 
+function addPatientSuccessfully() {
+  const Toast = Swal.mixin({
+      toast: false,
+      position: 'center',
+      showConfirmButton: false,
+    })
+    Toast.fire({
+      type: 'success',
+      title:'<a href="upload-claims.html" class="text-primary ml-5"><span style="color:#333 !important">" Patient Added Successfylly " </span> "press here To Add New Patient "</a> '
+    })
+}
+
+
+
+function success5() {
+  const Toast = Swal.mixin({
+      toast: false,
+      position: 'center',
+      showConfirmButton: false,
+      timer: 3500
+    })
+    Toast.fire({
+      type: 'success',
+      title: 'Payment Uploaded Succesfully'
+    })
+}
+
 function accept() {
   const Toast = Swal.mixin({
       toast: false,
@@ -317,35 +447,7 @@ $(document).ready(function(){
 });
 
 
-var real = document.getElementById('real-life');
-var btn  = document.getElementById('choose-btn-pc');
-var customTxt  = document.getElementById('customTxt');
-var srcBtn = document.getElementById('src-btn');
-var fileBtn = document.getElementById('file-btn');
-var customTxt2 = document.getElementById('customTxt2');
 
-
-btn.addEventListener("click",function() {
-  real.click();
-});
-real.addEventListener("change",function() {
-  if(real.value) {
-    customTxt.innerHTML = real.value;
-  } else {
-    customTxt.innerHTML = "No File Chosen yet !";
-  }
-});
-
-srcBtn.addEventListener("click",function() {
-  fileBtn.click();
-});
-fileBtn.addEventListener("change",function() {
-  if(fileBtn.value) {
-    customTxt2.innerHTML = fileBtn.value;
-  } else {
-    customTxt2.innerHTML = "No File Chosen yet !";
-  }
-})
 
 
 

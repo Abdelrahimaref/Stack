@@ -36,6 +36,21 @@
                     font-size: 10px;
                 }
             }
+            .search-sales {
+                border: none;
+                background-color: #FFF;
+                box-sizing: border-box;
+                height: 43px;
+                position: relative;
+                vertical-align: top;
+                border-radius: 50px;
+                font-family: Roboto;
+                font-size: 16px;
+                color: #383838;
+                padding: 0px 15px;
+                transition: border-color 200ms ease 0s, box-shadow 200ms ease 0s;
+                margin-top: 7rem;
+            }
        </style>
     </head>
     
@@ -180,11 +195,13 @@
                 <ul class="pt-5 unstyled-list" style="position:fixed" >
                     <li class="pt-5 active"><a href="index.html"> <i class="fas fa-home f-20 ml-3 mr-3"></i> Home </a> </li>
                     <li class="pt-5"><a href="chat.html"><i class="fas fa-comments ml-3 mr-3 fa-lg"></i> Chat</a> <span class="badge badge-primary">3</span></li>
-                    <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Editing</a></li>
-                    <li class="pt-5"><a href="req-from.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>Requests From You <span class="badge bg-danger text-white">2 new</span>  </a></li>
-                    <li class="pt-5"><a href="req-to.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>Requests to You <span class="badge bg-danger text-white">2 new</span>  </a></li>
+                    <li class="pt-5"><a href="edit.html"><i class="fas fa-cogs f-20 ml-3 mr-3"></i> Edit Profile</a></li>
+                    <li class="pt-5"><a href="req-from.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>Sent Requests<span class="badge bg-danger text-white">2 new</span>  </a></li>
+                    <li class="pt-5"><a href="req-to.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i>Recieved Requests <span class="badge bg-danger text-white">2 new</span>  </a></li>
                     <li class="pt-5"><a href="contract.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i> Contract Requests <span class="badge bg-danger text-white">2 new</span>  </a></li>
                     <li class="pt-5"><a href="../index.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i> Log Out</a></li>
+                    <li class="pt-5"><a href="my-profile.html"><i class="fas fa-sign-out-alt f-20 ml-3 mr-3"></i> My Profile</a></li>
+
                 </ul>
             </div>
         </div>
@@ -193,32 +210,15 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 ml-auto">
-                                <div class="row pt-md-5 mt-md-3 mb-5">
+                                <div class="row pt-md-5 mt-md-3">
                                     <div class="col-xl-3 col-sm-6 p-2">
                                         <div class="card card-common">
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between">
                                                     <i class="fas fa-shopping-cart fa-3x text-warning"></i>
                                                     <div class="text-right text-secondary">
-                                                        <h5>Receivables</h5>
+                                                        <h5>All Payments</h5>
                                                         <h3>$153.000</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer text-secondary">
-                                                <i class="fas fa-sync mr-3"></i>
-                                                <span>Updated</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-sm-6 p-2">
-                                        <div class="card card-common">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between">
-                                                    <i class="fas fa-money-bill-alt fa-3x text-success"></i>
-                                                    <div class="text-right text-secondary">
-                                                        <h5>Expenses</h5>
-                                                        <h3>$39.000</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -234,7 +234,7 @@
                                                 <div class="d-flex justify-content-between">
                                                     <i class="fas fa-users fa-3x text-info"></i>
                                                     <div class="text-right text-secondary">
-                                                        <h5>Users</h5>
+                                                        <h5>Contracts</h5>
                                                         <h3>15</h3>
                                                     </div>
                                                 </div>
@@ -251,7 +251,7 @@
                                                 <div class="d-flex justify-content-between">
                                                     <i class="fas fa-chart-line fa-3x text-danger"></i>
                                                     <div class="text-right text-secondary">
-                                                        <h5>Pending Users</h5>
+                                                        <h5>Pending Contracts</h5>
                                                         <h3>12</h3>
                                                     </div>
                                                 </div>
@@ -266,7 +266,7 @@
                             </div>
                         </div>
     
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-lg-4 col-md-12 mt-5">
                                 <div class="card">
                                     <canvas id="myChart"width="100%" height="91"></canvas>
@@ -302,7 +302,7 @@
         
         
         
-                        </div>
+                        </div> -->
                 </section>
 
         <!-- Companies Section -->
@@ -315,6 +315,9 @@
                             <div style="cursor:pointer" data-toggle="modal" data-target="#exampleModal" class="badge bg-danger text-white pt-3 p-4"><i class="fas fa-plus"></i> New Contract</div> 
                         </div>
                         <div class="row  mb-5">
+                            <div class="col-md-12 mb-5">
+                                <input type="search" placeholder="Search for Healthcare Company" class="form-control search-sales">
+                            </div>
                             <div class="col-xl-3 col-sm-6 p-2">
                                 <a href="profile.html">
                                     <div class="card card-common">
