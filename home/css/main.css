@@ -19,6 +19,22 @@ body {
   color: #757575;
 }
 
+::placeholder {
+  color: #FFF;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FFF;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FFF;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 1px;
@@ -684,6 +700,7 @@ textarea {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
   resize: none;
+  padding-top: 1rem;
 }
 
 .setting-box {
