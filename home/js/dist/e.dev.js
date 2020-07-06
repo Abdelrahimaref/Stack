@@ -1,5 +1,10 @@
 "use strict";
 
+/********** Setting Box  ********/
+$('.toggle-setting').click(function () {
+  $(this).find('i').toggleClass('fa-spin');
+  $(this).parent().toggleClass('hide-settings');
+});
 $(window).on("scroll", function () {
   if ($(window).scrollTop() >= 332) {
     $('.second-nav').css({

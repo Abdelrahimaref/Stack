@@ -42,7 +42,11 @@
 
 @media(max-width:992px) {
     .card-services {
-        margin-top: 0px;
+        margin-top: 30px;
         background-color: #FFF;
+    }
+    .card-paragraph {
+        color: #757575;
+        font-size: 15px;
     }
 }

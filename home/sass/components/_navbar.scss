@@ -55,8 +55,8 @@
             color: #ffffff;
             font-size: 30px;
             font-weight: bold;
-            padding-top: 20px;
-            padding-bottom: 19px;
+            padding-top: 23px;
+            padding-bottom: 23px;
             padding-left: 30px;
             padding-right: 30px;
             margin-left: 30px;
@@ -99,10 +99,84 @@
 }
 
 
-@media(max-width:792px) {
+@media(max-width:992px) {
     .slider-section h1 , .slider-section h1 span {
-        font-size: 23px;
+        font-size: 12px;
+        margin-top: 3rem;
     }
+    .slider-content--heading {
+        text-align: center;
+    }
+    .card-title {
+        font-size: 16px !important; 
+    }
+    .title-stack {
+        font-size: 19px !important;
+        text-align: center;
+        margin-top: 3rem !important;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .card {
+        margin-bottom: 1rem;
+    }
+    .about-section h3 {
+        font-size: 16px !important;
+        text-align: center;
+    }
+    .about-section p {
+        font-size: 14px !important; 
+        text-align: center;
+    }
+    .slider-section h2  {
+        font-size: 19px;
+    }
+    .slider-section h2 span  {
+        display: none;
+    }
+    .market-icon {
+        margin-bottom: 3rem;
+    }
+    .emergency-call h1 {
+        font-size: 16px !important;
+        text-align: center;
+    }
+    .emergency-call p {
+        font-size: 10px !important;
+    }
+    .emergency-call .h2-div {
+        left: 15px;
+        text-align: center;
+    }
+    .emergency-call h2 {
+        font-size: 14px !important;
+    }
+    .slider-section {
+        height: auto;
+    }
+    .slider-section p {
+        font-size: 14px;
+    }
+    .slider-section .get-start--btn {
+        background: #40b3ff;
+        padding: 5px;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: 12px;
+        padding-bottom: 11px;
+        padding-left: 21px;
+        padding-right: 23px;
+        text-decoration: none;
+    }
+    .slider-section .h2 {
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+    .card-style {
+        padding: 3rem;
+    }
+
 }
 @media(max-width:1200px) {
     .detailed-nav {
