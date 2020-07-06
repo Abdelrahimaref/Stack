@@ -1,15 +1,16 @@
 "use strict";
 
 $(window).on("scroll", function () {
-  if ($(window).scrollTop() >= 100) {
-    $('.nav-scroll').css({
-      backgroundColor: '#FFF',
-      boxShadow: '4px 4px 3px #F5F5F5'
+  if ($(window).scrollTop() >= 332) {
+    $('.second-nav').css({
+      position: 'fixed',
+      top: 0,
+      width: '100%',
+      zIndex: '9999999999999'
     });
   } else {
-    $('.nav-scroll').css({
-      backgroundColor: '#FFF',
-      boxShadow: 'none'
+    $('.second-nav').css({
+      position: 'static'
     });
   }
 });
